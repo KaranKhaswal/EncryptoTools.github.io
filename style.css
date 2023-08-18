@@ -43,7 +43,6 @@ section {
   margin-top: 2rem;
   display: flex;
   flex-flow: column;
-  padding: 0 15rem;
   background: rgba(0, 0, 0, 0.574);
 }
 
@@ -81,6 +80,7 @@ section {
   margin-bottom: 1rem;
   border-radius: 2rem;
   background-color: white;
+  color: black;
 }
 
 .btnn:hover {
@@ -89,6 +89,7 @@ section {
 
 .tools-container {
   display: flex;
+  height: auto;
 }
 
 .tools {
@@ -311,6 +312,8 @@ footer h1 {
 
 .page2-container {
   display: flex;
+  height: auto;
+  margin-top: 1rem;
 }
 
 .page2-block {

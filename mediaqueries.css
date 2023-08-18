@@ -4,6 +4,7 @@
     }
     header{
       flex-wrap: wrap;
+      width: fit-content;
     }
     .tools-container{
       flex-wrap: wrap;
