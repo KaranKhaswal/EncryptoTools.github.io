@@ -71,7 +71,7 @@ section {
 }
 
 .btnn {
-  font-family: cursive;
+  font-family: "Poppins", sans-serif;
   justify-content: center;
   font-weight: 600;
   transition: all 300ms ease;
@@ -112,7 +112,7 @@ section {
   filter: drop-shadow(10px 10px 25px #03e9f4);
   position: relative;
   display: block;
-  font-family: cursive;
+  font-family: "Poppins", sans-serif;
   margin: 15px;
   color: #fff;
   text-align: center;
