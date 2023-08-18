@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Encryption/Decryption</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <div class="page1" id="page1">
+      <section id="front">
+        <div class="header">
+          <p class="section__text__p1">***************</p>
+          <h1 class="title">Encrypto#tools</h1>
+          <div class="btnn-container">
+            <button class="btnn" onclick="location.href='./#aboutapp'">
+              About App
+            </button>
+            <button class="btnn" onclick="location.href='./#aboutdeveloper'">
+              About Developer
+            </button>
+          </div>
+        </div>
+        <div class="tools-container">
+          <div class="tools">
+            <h2>TOOLS</h2>
+            <div class="btn-container">
+              <button class="btn" onclick="gotoencrypt()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                ENCRYPTOR
+              </button>
+              <br />
+              <button class="btn" onclick="gotodecrypt()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                DECRYPTOR
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="aboutapp">
+        <div class="about-container">
+          <h2 class="about-title">About App</h2>
+          <article class="article-research">
+            <div>
+              <p>
+                'Encrypto#tools' provide Tools to Decrypt or Encrypt your data
+                using 128 bit encryption and with your own personal key.<br />
+                Instruction:<br />
+                Select Tool, Enter key and data hit Encrypt/Decrypt button, Copy
+                the data using Copy button and you're set.<br />
+                Note: key and data is not storing anywhere so 'KEEP KEY IN YOUR
+                MIND'<br />
+                *You can also use our android app 'Encrypto#Secure' which is a
+                note app so that you can save your decrypted data as a note and only
+                you can view, edit, delete the note using the key.<br /><br />
+                get the App: //Comming soon.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="aboutdeveloper">
+        <div class="about-container">
+          <h2 class="about-title">About Developer</h2>
+          <article class="article-research">
+            <div>
+              <p>
+                Hello, My name is Karan Khaswal.<br>
+                Trying to be an accomplished developer who thrives on
+                transforming innovative ideas into reality. With a keen eye for
+                detail and a passion for problem-solving.<br />
+                I develop this Tool to Protect our data's Integrity.<br />
+                Checkout My Website  :<a style="color: blanchedalmond;"
+                  href="https://karankhaswal-portfolio.netlify.app"
+                  target="_blank"
+                >https://karankhaswal-portfolio.netlify.app
+                </a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <footer>
+        <h1>'Encrypto#tools'</h1>
+        <p>Copyright &#169; 2023 Karan Khaswal. All Rights Reserved.</p>
+      </footer>
+    </div>
+
+    <div class="page2" id="encryptpage">
+      <section id="back">
+        <div class="header">
+          <p class="section__text__p1">****</p>
+          <h1 class="title">Encrypto#tools</h1>
+        </div>
+        <div class="page2-container">
+          <div class="page2-block">
+            <span id="goback" onclick="back ()">&larr;</span>
+            <fieldset class="fieldset">
+              <div class="user-box">
+                <input type="text" id="ekey" name="ekey" required />
+                <label>KEY</label>
+              </div>
+              <div class="user-box">
+                <textarea
+                  id="edata"
+                  name="data"
+                  rows="7"
+                  cols="100"
+                  required
+                ></textarea>
+                <label>Data</label>
+              </div>
+              <div class="user-box">
+                <textarea
+                  id="eoutput"
+                  name="output"
+                  placeholder="Encrypted data will show here"
+                  rows="7"
+                  cols="100"
+                  readonly
+                ></textarea>
+              </div>
+              <div class="btn-container">
+                <button class="btn" onclick="encrypt()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  ENCRYPT
+                </button>
+                <button class="btn" onclick="copyToClipboard('enc');">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  COPY
+                </button>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <h1>'Encrypto#tools'</h1>
+        <p>Copyright &#169; 2023 Karan Khaswal. All Rights Reserved.</p>
+      </footer>
+    </div>
+
+    <div class="page2" id="decryptpage">
+      <section id="back">
+        <div class="header">
+          <p class="section__text__p1">****</p>
+          <h1 class="title">Encrypto#tools</h1>
+        </div>
+        <div class="page2-container">
+          <div class="page2-block">
+            <span id="goback" onclick="back ()">&larr;</span>
+            <fieldset class="fieldset">
+              <div class="user-box">
+                <input type="text" id="dkey" name="dkey" required />
+                <label>KEY</label>
+              </div>
+              <div class="user-box">
+                <textarea
+                  id="ddata"
+                  name="data"
+                  rows="7"
+                  cols="100"
+                  required
+                ></textarea>
+                <label>Data</label>
+              </div>
+
+              <div class="user-box">
+                <textarea
+                  id="doutput"
+                  name="output"
+                  placeholder="Decrypted data will show here"
+                  rows="7"
+                  cols="100"
+                  readonly
+                ></textarea>
+              </div>
+              <div class="btn-container">
+                <button class="btn" onclick="decrypt()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  DECRYPT
+                </button>
+                <button class="btn" onclick="copyToClipboard('dec');">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  COPY
+                </button>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <h1>'Encrypto#tools'</h1>
+        <p>Copyright &#169; 2023 Karan Khaswal. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

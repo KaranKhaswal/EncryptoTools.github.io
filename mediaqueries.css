@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px) {
+    footer {
+      height: 40vh;
+    }
+    article {
+      font-size: 1rem;
+    }
+    
+    .btnn-container {
+      flex-wrap: wrap;
+    }
+    
+    .section__text__p1 {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .text-container {
+      text-align: justify;
+    }
+    section,
+  .section-container {
+    height: fit-content;
+  }
+  #aboutapp{
+    height: 60vh;
+  }
+  .btn-container{
+    font-size: 10px;
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .page2-container{
+    flex-wrap: wrap;
+  }
+  .fieldset {
+    flex-wrap: wrap;
+  }
+}
