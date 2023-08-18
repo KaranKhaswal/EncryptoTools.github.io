@@ -311,7 +311,8 @@ footer h1 {
 }
 
 .page2-container {
-  display: flex;
+  display: block;
+  
   height: auto;
 }
 
