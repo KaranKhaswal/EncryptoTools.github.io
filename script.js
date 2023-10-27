@@ -72,6 +72,10 @@ function encrypt() {
     encryptData(plaintextInput, key).then((encrypted) => {
       document.getElementById("eoutput").value = encrypted;
     });
+    var clearkey = document.getElementById("ekey");
+    var cleartext = document.getElementById("edata");
+    clearkey.value="";
+    cleartext.value="";
   }
 }
 function decrypt() {
@@ -84,6 +88,10 @@ function decrypt() {
     decryptData(encryptedText, key).then((decrypted) => {
       document.getElementById("doutput").value = decrypted;
     });
+    var clearkey = document.getElementById("dkey");
+    
+    clearkey.value="";
+    
   }
 }
 
